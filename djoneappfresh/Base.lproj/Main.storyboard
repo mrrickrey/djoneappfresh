@@ -1,58 +1,219 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Minecraft.ttf">
+            <string>Minecraft</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--First-->
+        <!--Inicio-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="djoneappfresh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sJG-WJ-p7u"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dj1main" translatesAutoresizingMaskIntoConstraints="NO" id="hgE-QB-iLX">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1nL-ri-Jc7"/>
+                                    <constraint firstAttribute="height" constant="160" id="zRz-EK-Zm0"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xy6-ez-hIl">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uBP-zQ-0Qb">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdB-cB-S9a">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="46" id="JHL-h1-oMA"/>
+                                                    <constraint firstAttribute="height" constant="46" id="bJ5-aY-p5t"/>
+                                                </constraints>
+                                                <state key="normal" image="1473225178_social_media_logo_snapchat"/>
+                                                <connections>
+                                                    <action selector="snapPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="RXy-IQ-zQz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8R-dX-m3S">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="9Qn-5o-TZu"/>
+                                                    <constraint firstAttribute="width" constant="46" id="qI9-Qe-HzV"/>
+                                                </constraints>
+                                                <state key="normal" image="1473225327_instagram_online_social_media_photo"/>
+                                                <connections>
+                                                    <action selector="instaPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="kVR-Wl-1SU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxc-RC-p4j">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="46" id="I83-lG-SAz"/>
+                                                    <constraint firstAttribute="height" constant="46" id="x2W-VR-ojW"/>
+                                                </constraints>
+                                                <state key="normal" image="1473225381_online_social_media_facebook"/>
+                                                <connections>
+                                                    <action selector="facebookPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="AFH-l9-xJ7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVW-NL-o56">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="4Rk-22-eCY"/>
+                                                    <constraint firstAttribute="width" constant="46" id="ta1-aA-Zqe"/>
+                                                </constraints>
+                                                <state key="normal" image="1473225548_whatsapp_social_media_logo"/>
+                                                <connections>
+                                                    <action selector="whatApPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="LCu-Bg-7H5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.3616360991" blue="0.13408558949999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uBP-zQ-0Qb" firstAttribute="centerX" secondItem="Xy6-ez-hIl" secondAttribute="centerX" id="Oiy-Kb-RlN"/>
+                                    <constraint firstItem="uBP-zQ-0Qb" firstAttribute="centerY" secondItem="Xy6-ez-hIl" secondAttribute="centerY" id="Xk9-dq-zV7"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOCIAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kq-J8-a0e">
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.3616360991" blue="0.13408558949999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIe-Dp-6Ss">
+                                <frame key="frameInset" minX="32" minY="32" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.3616360991" blue="0.13408558949999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ha7-AI-YuH">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1I-jT-u88">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="71" id="G4y-2m-70m"/>
+                                            <constraint firstAttribute="width" constant="96" id="Q2R-l4-YLo"/>
+                                        </constraints>
+                                        <state key="normal" image="contactto"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wx-Tg-6Z3">
+                                        <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.3616360991" blue="0.13408558949999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="5kq-J8-a0e" firstAttribute="top" secondItem="hgE-QB-iLX" secondAttribute="bottom" constant="27" id="1EF-4h-2YQ"/>
+                            <constraint firstItem="Xy6-ez-hIl" firstAttribute="top" secondItem="hgE-QB-iLX" secondAttribute="bottom" constant="57" id="1v3-6H-eKQ"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Xy6-ez-hIl" secondAttribute="bottom" constant="216" id="2dk-HL-VLf"/>
+                            <constraint firstItem="Xy6-ez-hIl" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" constant="-4" id="3jh-9Y-UZ0"/>
+                            <constraint firstItem="sJG-WJ-p7u" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="8Bv-Ki-Ix7"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="5kq-J8-a0e" secondAttribute="bottom" constant="440" id="8Ga-Sd-C0L"/>
+                            <constraint firstItem="5kq-J8-a0e" firstAttribute="centerX" secondItem="Xy6-ez-hIl" secondAttribute="centerX" id="Cin-xa-fWW"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="sJG-WJ-p7u" secondAttribute="bottom" id="J0f-fL-DZE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ha7-AI-YuH" secondAttribute="trailing" constant="12" id="L8V-5t-daB"/>
+                            <constraint firstItem="Xy6-ez-hIl" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="308" id="TQo-F3-Bmf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5kq-J8-a0e" secondAttribute="trailing" id="VEI-iz-erW"/>
+                            <constraint firstItem="hgE-QB-iLX" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" constant="8" id="WWp-MH-3qm"/>
+                            <constraint firstAttribute="trailing" secondItem="sJG-WJ-p7u" secondAttribute="trailing" id="dza-en-lR7"/>
+                            <constraint firstItem="sJG-WJ-p7u" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="e4G-0E-HYT"/>
+                            <constraint firstItem="ha7-AI-YuH" firstAttribute="top" secondItem="Xy6-ez-hIl" secondAttribute="bottom" constant="40" id="jmG-YX-SHz"/>
+                            <constraint firstItem="hgE-QB-iLX" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="lxN-y9-yfR"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Inicio" image="crown" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="749.27536231884062" y="-321.19565217391306"/>
         </scene>
-        <!--Second-->
+        <!--Eventos-->
+        <scene sceneID="kcY-Dq-JmD">
+            <objects>
+                <viewController id="HEr-4c-75I" customClass="ThirdViewController" customModule="djoneappfresh" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hgf-8g-PIw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lk9-GJ-ZZc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OSP-KG-S3X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nh2-FO-mNN">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="third View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="BmF-4v-ab8">
+                                        <frame key="frameInset" minX="109" minY="313" width="157.5" height="41.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1M-vk-Rjm">
+                                        <frame key="frameInset" minX="90.5" minY="362.5" width="194.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="BmF-4v-ab8" secondAttribute="centerX" id="35z-2h-i84"/>
+                                    <constraint firstItem="F1M-vk-Rjm" firstAttribute="top" secondItem="BmF-4v-ab8" secondAttribute="bottom" constant="8" symbolic="YES" id="GG5-8u-yNK"/>
+                                    <constraint firstItem="F1M-vk-Rjm" firstAttribute="centerX" secondItem="BmF-4v-ab8" secondAttribute="centerX" id="Wt2-ad-uLp"/>
+                                    <constraint firstAttribute="centerY" secondItem="BmF-4v-ab8" secondAttribute="centerY" id="rJb-C6-XtO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Eventos" image="eventos" id="pMT-ne-J5a"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zQ-Dm-eLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-854" y="960"/>
+        </scene>
+        <!--Mi Musica-->
+        <scene sceneID="DsN-7e-vfz">
+            <objects>
+                <viewController id="pcM-Lq-IUM" customClass="FourthViewController" customModule="djoneappfresh" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5KI-Gc-iwr"/>
+                        <viewControllerLayoutGuide type="bottom" id="XmE-hl-jw1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bd-Te-ZaV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mi Musica" image="mimusica" id="JmG-bu-cP0"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h2Y-Sx-Re5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8" y="970"/>
+        </scene>
+        <!--Musica-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="djoneappfresh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
@@ -75,25 +236,30 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Musica" image="musica" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Maintab-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="maintab" customModule="djoneappfresh" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.3616360991" blue="0.13408558949999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.017668269229999999" green="0.0063894839629999997" blue="0.0023690602960000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.3616360991" blue="0.13408558949999999" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="HEr-4c-75I" kind="relationship" relationship="viewControllers" id="jjX-1s-16H"/>
+                        <segue destination="pcM-Lq-IUM" kind="relationship" relationship="viewControllers" id="2Yw-df-RnA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -102,7 +268,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="1473225178_social_media_logo_snapchat" width="128" height="128"/>
+        <image name="1473225327_instagram_online_social_media_photo" width="512" height="512"/>
+        <image name="1473225381_online_social_media_facebook" width="512" height="512"/>
+        <image name="1473225548_whatsapp_social_media_logo" width="512" height="512"/>
+        <image name="background" width="1365" height="2048"/>
+        <image name="contactto" width="242" height="179"/>
+        <image name="crown" width="20" height="20"/>
+        <image name="dj1main" width="622" height="694"/>
+        <image name="eventos" width="20" height="20"/>
+        <image name="mimusica" width="20" height="20"/>
+        <image name="musica" width="20" height="20"/>
     </resources>
 </document>

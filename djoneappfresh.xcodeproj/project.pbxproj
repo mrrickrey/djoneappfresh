@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B1A97CC1D972B06006BA767 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B1A97CB1D972B06006BA767 /* Minecraft.ttf */; };
+		5B1A97CE1D97344C006BA767 /* maintab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1A97CD1D97344C006BA767 /* maintab.swift */; };
+		5B1A97D01D974FFB006BA767 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1A97CF1D974FFB006BA767 /* FourthViewController.swift */; };
+		5B1A97D21D97500B006BA767 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1A97D11D97500B006BA767 /* ThirdViewController.swift */; };
 		5BB889B71D96D786001FE79A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB889B61D96D786001FE79A /* AppDelegate.swift */; };
 		5BB889B91D96D786001FE79A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB889B81D96D786001FE79A /* FirstViewController.swift */; };
 		5BB889BB1D96D786001FE79A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB889BA1D96D786001FE79A /* SecondViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B1A97CB1D972B06006BA767 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		5B1A97CD1D97344C006BA767 /* maintab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = maintab.swift; sourceTree = "<group>"; };
+		5B1A97CF1D974FFB006BA767 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		5B1A97D11D97500B006BA767 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		5BB889B31D96D786001FE79A /* djoneappfresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = djoneappfresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB889B61D96D786001FE79A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BB889B81D96D786001FE79A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B1A97D31D975268006BA767 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B1A97CF1D974FFB006BA767 /* FourthViewController.swift */,
+				5BB889BA1D96D786001FE79A /* SecondViewController.swift */,
+				5BB889B81D96D786001FE79A /* FirstViewController.swift */,
+				5B1A97D11D97500B006BA767 /* ThirdViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5B1A97D41D975271006BA767 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B1A97CB1D972B06006BA767 /* Minecraft.ttf */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
 		5BB889AA1D96D786001FE79A = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +83,14 @@
 		5BB889B51D96D786001FE79A /* djoneappfresh */ = {
 			isa = PBXGroup;
 			children = (
+				5B1A97D41D975271006BA767 /* Files */,
+				5B1A97D31D975268006BA767 /* Controller */,
 				5BB889B61D96D786001FE79A /* AppDelegate.swift */,
-				5BB889B81D96D786001FE79A /* FirstViewController.swift */,
-				5BB889BA1D96D786001FE79A /* SecondViewController.swift */,
 				5BB889BC1D96D786001FE79A /* Main.storyboard */,
 				5BB889BF1D96D786001FE79A /* Assets.xcassets */,
 				5BB889C11D96D786001FE79A /* LaunchScreen.storyboard */,
 				5BB889C41D96D786001FE79A /* Info.plist */,
+				5B1A97CD1D97344C006BA767 /* maintab.swift */,
 			);
 			path = djoneappfresh;
 			sourceTree = "<group>";
@@ -129,6 +157,7 @@
 			files = (
 				5BB889C31D96D786001FE79A /* LaunchScreen.storyboard in Resources */,
 				5BB889C01D96D786001FE79A /* Assets.xcassets in Resources */,
+				5B1A97CC1D972B06006BA767 /* Minecraft.ttf in Resources */,
 				5BB889BE1D96D786001FE79A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,8 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1A97CE1D97344C006BA767 /* maintab.swift in Sources */,
+				5B1A97D01D974FFB006BA767 /* FourthViewController.swift in Sources */,
 				5BB889BB1D96D786001FE79A /* SecondViewController.swift in Sources */,
 				5BB889B71D96D786001FE79A /* AppDelegate.swift in Sources */,
+				5B1A97D21D97500B006BA767 /* ThirdViewController.swift in Sources */,
 				5BB889B91D96D786001FE79A /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +297,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 859JXUC44F;
 				INFOPLIST_FILE = djoneappfresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.enrique-reyes.djoneappfresh";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 859JXUC44F;
 				INFOPLIST_FILE = djoneappfresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.enrique-reyes.djoneappfresh";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +338,7 @@
 				5BB889C91D96D786001FE79A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
